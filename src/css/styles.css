@@ -1,0 +1,73 @@
+body {
+  font-family: "MedievalSharp", cursive;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  color: #d4af27;
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 2px solid #d4af37;
+  border-radius: 5px;
+  background: #444;
+  color: #fff;
+}
+
+button {
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background: #d4af37;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #f1c232;
+}
+
+.resultado {
+  margin-top: 20px;
+}
+
+.resultado img {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #d4af37;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
