@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medieval Hero Level</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>🌟 Classificador de Nível de Herói 🌟</h1>
-        <div class="form">
-          <label for="heroName">Nome do Herói:</label>
-          <input type="text" id="heroName" placeholder="Digite o nome do herói">
-          
-          <label for="heroXP">Experiência (XP):</label>
-          <input type="number" id="heroXP" placeholder="Digite o XP do herói">
-          
-          <button onclick="classificarHeroi()">Classificar Herói</button>
-        </div>
-        <div class="resultado">
-          <h2 id="resultadoTexto"></h2>
-          <img id="resultadoImagem" src="" alt="" class="hidden">
-        </div>
+      <h1>🌟 Classificador de Nível de Herói 🌟</h1>
+      <div class="form">
+        <label for="heroName">Nome do Herói:</label>
+        <input type="text" id="heroName" placeholder="Digite o nome do herói" />
+
+        <label for="heroXP">Experiência (XP):</label>
+        <input type="number" id="heroXP" placeholder="Digite o XP do herói" />
+
+        <button onclick="classificarHeroi()">Classificar Herói</button>
       </div>
-      <script src="script.js"></script>    
-</body>
+      <div class="resultado">
+        <h2 id="resultadoTexto"></h2>
+        <img id="resultadoImagem" src="" alt="" class="hidden" />
+      </div>
+    </div>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-button" onclick="fecharModal()">&times;</span>
+        <h2 id="modalResultadoTexto"></h2>
+        <img id="modalResultadoImagem" src="" alt="" class="modal-imagem" />
+      </div>
+    </div>
+    <script src="./src/scripts/engine.js"></script>
+  </body>
 </html>
